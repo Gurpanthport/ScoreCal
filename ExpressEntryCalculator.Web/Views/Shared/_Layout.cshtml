@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Entry Calculator @ViewData["Title"]</title>
+    <meta name="description" content="Program which calculates points for Canadian immigration system called 
+          Express Entry based on Comprehensive Ranking System (CRS) Criteria." />
+    <meta name="keywords" content="Immigration to Canada, Canada immigration system, Express Entry points, Express Entry calculator, Express Entry,
+          Canada Express Entry, canadian Provincial Nominee Program, Provincial Nominee Program, Skilled worker in Canada, Express Entry profile, permanent residence in Canada, Canadian permanent residence, Comprehensive Ranking System" />
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/fontello/css/github.css" type="text/css" />
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    </environment>
+    <environment exclude="Development">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112807661-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-112807661-1');
+        </script>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/fontello/css/github.min.css" type="text/css" />
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    </environment>
+
+</head>
+<body>
+
+    <div class="container">
+        <!--<div class="jumbotron">-->
+           
+          <a href="https://www.canadianimmigrations.com/en/">
+            <img src="~/images/NC_Logo_Font-2.png">
+          </a>
+            <p>
+
+            </p>
+        <!--</div>-->
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+      <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase">New Chapter Immigration</h5>
+              <p>New Chapter immigration Group provides you with a very high-quality immigration services and will show you how to Immigrate to Canada. Send us an email on <a href="mailto:info@canadianimmigrations.com">Info@canadianimmigrations.com</a></div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Pages</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href=https://www.canadianimmigrations.com/en/">Home</a>
+                  </li>
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/free-assessment/">Free Assessment</a>
+                  </li>
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/contact/">Contact Us</a>
+                  </li>
+                 
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/blog-page/">Blog Page</a>
+                  </li>
+                  <li>
+                    <a href="http://crsscore.azurewebsites.net/">CRS Points Calculator</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Sectors</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/work-permit-in-canada/">Work In Canada</a>
+                  </li>
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/study-in-canada/">Study Permit</a>
+                  </li>
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/family-class-sponsorship-2019/">Family Spoinsorship</a>
+                  </li>
+                  <li>
+                    <a href="https://www.canadianimmigrations.com/en/business-investment/">Invest In Canada</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2019 Copyright:
+          <a href="https://www.canadianimmigrations.com/en/">Canadainimmigrations.com</a>
+        </div>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/modernizr/modernizr-custom.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/moment/moment-with-locales.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/lib/modernizr/modernizr-custom.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="~/lib/moment/moment-with-locales.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"
+                asp-fallback-src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<ExpressEntryStats> expressEntryStatsAccessor
+@{ 
+    var expressEntryStats = expressEntryStatsAccessor.Value;
+}
+
